@@ -1,0 +1,96 @@
+ <!-- <div class="card">
+                    <div class="card-colors pink"></div>
+                    <div class="content-box">   
+                        <span class="ticket-id">#4343sfsfges</span>
+                        <p class="card-content" contenteditable="false">
+                           go to party
+                        </p>
+                        <div class="lock_unlock">
+                            <i class="fa fa-lock"></i>
+                            <i class="fa fa-unlock"></i>
+                        </div>
+                    </div>
+                    <div class="date-box">
+                        <span class="month">JUNE</span>
+                        <span class="date">29</span>
+                    </div>
+                </div> 
+            -->
+
+
+
+
+
+
+
+
+<!-- 
+            for(let i = 0; i < hedercolor.length;i++){
+                const hedercolors = hedercolor[i];
+                hedercolors.addEventListener("click",(e)=>{
+                    // console.log("clicked",e.target);
+                    const card_color = e.target.classList[1];
+                    console.log("clicked",card_color);
+                    const allcards =  document.querySelectorAll(".card");
+                     for(let i = 0;i < allcards.length;i++){
+                         const ticketContainer = allcards[i];
+        
+                    const ticketColorElement = ticketContainer.querySelector(".card-colors"); 
+        
+                    const ticketColor = ticketColorElement.classList[1];
+        
+                    if(ticketColor!==card_color){
+                        ticketContainer.style.display="none";
+                    }else{
+                        ticketContainer.style.display="block";
+                    }
+                    }
+                  
+               })
+               hedercolors.addEventListener("dblclick",(e)=>{
+                console.log("dblclicked",e.target);
+                const allcards =  document.querySelectorAll(".card");
+                for(let i=0; i< allcards.length;i++){
+                    const ticketContainer = allcards[i];
+                    ticketContainer.style.display="block";
+                }
+               })
+        
+            
+        }
+
+
+
+
+
+
+
+
+
+
+        for(let i = 0; i < hedercolor.length;i++){
+            const hedercolors = hedercolor[i];
+            hedercolors.addEventListener("click",(e)=>{
+                const pressedcolor = e.target.classList[1];
+                // console.log(pressedcolor);
+                const all_cards = document.querySelectorAll(".card");
+                for(let i = 0;i < all_cards.length;i++){
+                    const card_ele = all_cards[i];
+                    const specific_card = card_ele.querySelector(".card-colors");
+                    const specific_card_color = specific_card.classList[1];
+                    if(specific_card_color!==pressedcolor){
+                        card_ele.style.display = "none";
+                    }else{
+                        card_ele.style.display = "block";
+                    }
+                }
+        
+                hedercolors.addEventListener("dblclick",(e)=>{
+                    const all_cards = document.querySelectorAll(".card");
+                    for(let i = 0; i<all_cards.length;i++){
+                            const ticketContainer = allcards[i];
+                            ticketContainer.style.display="block";
+                    }
+                })
+            })
+        } -->

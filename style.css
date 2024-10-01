@@ -1,0 +1,304 @@
+/* ----------------------------------------------color variables---------------------------------------------- */
+:root{
+--pink: lightpink;
+--blue: lightblue;
+--purple: purple;
+--green: lightgreen;
+--light:white;
+--dark:black;
+--red:red;
+
+}
+.pink{
+    background-color: var(--pink);
+}
+
+.blue{
+    background-color: var(--blue);
+}
+
+.purple{
+    background-color: var(--purple);
+}
+
+.green{
+    background-color: var(--green);
+}
+.light{
+    background-color: var(--light);
+}
+.dark{
+    background-color: var(--dark);
+}
+
+.red {
+    color: var(--red);
+}
+/* ----------------------------------------------header---------------------------------------------- */
+.header-cont{
+    display: flex;
+   align-items: center; 
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+}
+.color-cont{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   margin-left: 5rem;
+    height: 6vh;
+    width: 20rem;
+    background-color: #393c3f;
+    border-radius: 5px;
+}
+.colors{
+    height: 3.5vh;
+    width: 3.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.action-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 4rem;
+    height: 6vh;
+    width: 11rem;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.add-cont,.delete-cont,.priority-btn{
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+/* ----------------------------------------------Main container---------------------------------------------- */
+/* .main-cont{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 3rem;
+}
+.pending-cont {
+    height: 100%;
+    width: 70%; 
+    gap: 2rem;
+    border-right: 5px solid black;
+  }
+.finished-cont {
+    width: 30%;
+    height: 100%;
+  } */
+  .heading_cont{
+    display: flex;
+    text-align: center;
+    padding: 3rem;
+}
+
+.heading_pending{
+    width: 70%;
+}
+
+.heading_finished{
+    width: 30%;
+}
+
+.container_wrapper{
+    display: flex;
+}
+
+.container{
+    /* min-height:800px; */
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+
+}
+
+.pending_cont{
+    width: 60%;
+    gap: 2rem;
+    border-right: 2px solid black;
+
+}
+
+.finished_cont{
+    width: 40%;
+}
+
+
+
+/* ----------------------------------------------3D card---------------------------------------------- */
+/* From Uiverse.io by Smit-Prajapati */ 
+
+
+  
+  .card {
+    border-radius: 10px;
+    border: 3px solid rgb(255, 255, 255);
+    transform-style: preserve-3d;
+    background: linear-gradient(135deg,#0000 18.75%,#f3f3f3 0 31.25%,#0000 0),
+    repeating-linear-gradient(45deg,#f3f3f3 -6.25% 6.25%,  var(--light) 0 18.75%);
+    background-size: 60px 60px;
+    background-position: 0 0, 0 0;
+    background-color:  var(--purple);
+    /* #f0f0f0 */
+    height: 15.9rem;
+    width: 17rem;
+    box-shadow: rgba(142, 142, 142, 0.3) 0px 30px 30px -10px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .card:hover {
+    background-position: -100px 100px, -100px 100px;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+  }
+  .card-colors{
+    height: 3rem;
+    /* background-color:  var(--green); */
+    border-radius: 10px 10px 0px 0px;
+
+  }
+  
+  .content-box {
+    height: 11rem;
+    background: rgba(4, 193, 250, 0.732);
+    border-radius: 0px 0px 10px 10px;
+    transition: all 0.5s ease-in-out;
+    padding: 30px 20px 2px 15px;
+    transform-style: preserve-3d;
+  }
+  
+  .content-box .ticket-id {
+    display: inline-block;
+    /* color: white; */
+    color: black;
+    font-size: 15px;
+    font-weight: 900;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 50px);
+  }
+  
+  .content-box .ticket-id:hover {
+    transform: translate3d(0px, 0px, 60px);
+  }
+  
+  .content-box .card-content {
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 700;
+    /* color: #f2f2f2; */
+    color: black;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 30px);
+  }
+  
+  .content-box .card-content:hover {
+    transform: translate3d(0px, 0px, 60px);
+  }
+  
+  .content-box .lock_unlock {
+    cursor: pointer;
+    
+    margin-left: 11rem;
+    margin-bottom: 1px;
+    width: 20px;
+    text-align: center;
+    display: inline-block;
+    font-weight: 1200;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgb(7, 185, 255);
+    border-radius: 5px;
+    background: white;
+    color: black;
+    padding: 0.5rem 0.7rem;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 20px);
+  }
+  
+  .content-box .lock_unlock:hover {
+    transform: translate3d(0px, 0px, 60px);
+  }
+  
+  .date-box {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 30px;
+    width: 50px;
+    background: white;
+    border: 1px solid rgb(7, 185, 255);
+    border-radius: 10px;
+    padding: 10px;
+    transform: translate3d(0px, 0px, 80px);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 17px 10px -10px;
+  }
+  
+  .date-box span {
+    display: block;
+    text-align: center;
+  }
+  
+  .date-box .month {
+    /* color: rgb(4, 193, 250); */
+    color: black;
+    font-size: 9px;
+    font-weight: 700;
+  }
+  
+  .date-box .date {
+    font-size: 20px;
+    font-weight: 900;
+    /* color: rgb(4, 193, 250); */
+    color: black;
+  }
+
+  .model_cont{
+    height: 50vh;
+    width: 40vw;    
+    position: fixed;
+    top:25vh;
+    left: 25vw;
+    /* display: flex; */
+    display: none;
+}
+
+.textarea_cont{
+
+    height: 96%;
+    width: 75%;
+    color: var(--dark);
+    font-size: 2rem;
+    resize: none;
+    border: 5px solid black;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.priority_color_cont{
+    height: 100%;
+    width: 25%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--dark);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.priority_color{
+
+    height: 3rem;
+    width: 5rem;
+    cursor: pointer;
+    border-radius: 10   px;
+}
+
+.active{
+    border:5px solid var(--light);
+}
+   
